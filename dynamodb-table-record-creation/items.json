@@ -1,0 +1,7 @@
+{
+ "hash-key-column": {"S": "Id"},
+  "column-1": {"S": "Mumbai"},
+  "column-2": {"S": "Banglore"},
+  "column-3": {"N": "33333"},
+  "column-4": {"N": "44444"}
+}
