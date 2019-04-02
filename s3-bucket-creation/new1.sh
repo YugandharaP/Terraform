@@ -1,2 +1,2 @@
 echo "terraform"
-echo $TEST_PARA
+echo ${params.TEST_PARA}
