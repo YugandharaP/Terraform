@@ -20,7 +20,8 @@ def someFunc(String text){
 }
 
 def someFunc1(){
-    echo $qwe
-	echo $jdk_Path
+    echo "${qwe}"
+	echo "${jdk_Path}"
+	echo "${params.TEST}"
     
 }
