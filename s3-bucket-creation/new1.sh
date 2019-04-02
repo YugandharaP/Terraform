@@ -1,2 +1,2 @@
 echo "terraform"
-echo ${test_para}
+echo $TEST_PARA
