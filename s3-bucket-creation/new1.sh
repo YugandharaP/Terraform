@@ -7,11 +7,10 @@ steps  {
 	terraformInstall()
 	someFunc1()
   sh '''
-	#sudo apt-get install unzip
-	#sudo wget https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
-	
-	#sudo unzip terraform_0.11.13_linux_amd64.zip
-	#sudo mv terraform /var/lib/jenkins/workspace/Test/s3-bucket-creation
+	sudo apt-get install unzip
+	sudo wget https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
+	sudo unzip terraform_0.11.13_linux_amd64.zip
+	sudo mv terraform /var/lib/jenkins/workspace/Test/s3-bucket-creation
 	terraform --version
 	cd /var/lib/jenkins/workspace/Test/s3-bucket-creation
 	terraform init
