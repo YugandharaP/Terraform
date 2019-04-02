@@ -1,10 +1,15 @@
 pipeline{
  agent any
+ environment{
+ qwe="trgdg"
+ jdk_Path="/usr/lib"
+     }
 stages {
    stage('test')
   {
 steps  {
-  someFunc("TESGHJGJGH")
+ 
+  someFunc1()
    }
 }
 }}
@@ -12,4 +17,10 @@ steps  {
 def someFunc(String text){
     echo text
     text
+}
+
+def someFunc1(){
+    echo $qwe
+	echo $jdk_Path
+    
 }
