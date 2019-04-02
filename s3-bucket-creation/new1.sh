@@ -7,8 +7,6 @@ steps  {
 	terraformInstall()
 	someFunc1()
   sh '''
-	export access_key = ${params.access_key}
-	export secret_key = ${params.secret_key}
 	#sudo apt-get install unzip
 	sudo wget https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
 	sudo unzip terraform_0.11.13_linux_amd64.zip
