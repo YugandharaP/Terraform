@@ -1,11 +1,13 @@
 pipeline{
-node {
-   stage 'test'
-   
+ agent none
+stages {
+   stage('test')
+  {
+steps  {
    sh "echo $PWD"
-   def whatThe = someFunc('textToFunc')
+   def whatThe = someFunc('textToFunc')}
 }
-}
+}}
 
 def someFunc(String text){
     echo text
