@@ -1,2 +1,3 @@
 echo "terraform"
-echo ${params.TEST_PARA}
+echo $PWD
+echo ${TEST}
