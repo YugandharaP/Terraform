@@ -22,8 +22,7 @@ def terraformInstall(){
 }
 
 def someFunc1(){
-    echo "${acce}"
-	echo "${jdk_Path}"
+ 
 	echo "${params.TEST}"
     
 }
