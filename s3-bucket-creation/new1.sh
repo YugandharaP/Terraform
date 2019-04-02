@@ -5,7 +5,7 @@ stages {
   {
 steps  {
    sh "echo $PWD"
-   def whatThe = someFunc('textToFunc')}
+   }
 }
 }}
 
