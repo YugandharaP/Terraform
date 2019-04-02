@@ -1,7 +1,7 @@
 
 
 /**************S3 bucket********************************/
-bucket_name 	= "bucket_name"
+bucket_name 	= "yugaTest"
 acl_policy 		= "public-read"
 files 			= "local file path"
 key				= "s3 bucket file key(eg. app.zip)"
