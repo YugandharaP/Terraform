@@ -14,7 +14,7 @@ steps  {
 	cd /var/lib/jenkins/workspace/Test/s3-bucket-creation/
 	./terraform --version
 	./terraform init
-	./teraform plan -var access_key=${params.access_key} -var secret_key=${params.secret_key}
+	./terraform plan -var access_key=${params.access_key} -var secret_key=${params.secret_key}
 	./terraform apply -auto-approve -var access_key=${params.access_key} -var secret_key=${params.secret_key}
   '''
    }
