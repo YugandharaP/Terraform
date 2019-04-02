@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "s3-bucket"{
 	acl			= "${var.acl_policy}"
 }
 
-/************Uploading file into S3 bucket******************/
+/************Uploading file into S3 bucket******************
 resource "aws_s3_bucket_object" "upload-file" {
 	depends_on 		= ["aws_s3_bucket.s3-bucket"]
 	bucket 			= "${var.bucket_name}"
@@ -19,3 +19,4 @@ resource "aws_s3_bucket_object" "upload-file" {
 	source			= "${var.files}"
 	content_type 	= "${var.content_type}"
 }
+**********************************************************/

@@ -1,5 +1,4 @@
-access_key = "provide your access_key here"
-secret_key = "provide your secret_key here"
+
 
 /**************S3 bucket********************************/
 bucket_name 	= "bucket_name"
