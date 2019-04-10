@@ -1,0 +1,4 @@
+1.. Web hosting -freenom domain
+2.. static web hosting
+3.. api gateway-lambda-dynamo
+4... connect ec2 instance
