@@ -12,9 +12,9 @@ egress_cidr_blocks 	= ["0.0.0.0/0"]
 /*******************IAM*******************************/
 role_name 			= "my-new-lambda-role"
 description 		= "Allows Lambda functions to call AWS services on your behalf."
-assume_role_policy 	= "local_path/iam_role_policy.json"
+assume_role_policy 	= "iam-role-policy/iam_role_policy.json"
 iam_policy_count    = 1
-iam_policy_arn 		= ["local_path/iam_role_policy.json"]
+iam_policy_arn 		= ["iam-role-policy/iam_role_policy.json"]
 
 /***************EC2***********************************/
 file 			= "install_apache.sh"
@@ -25,7 +25,7 @@ instance_type 	= "t2.micro"
 tag_name 		= "my_instance"
 connection_type = "ssh"
 user 			= "ubuntu"
-key_path 		= "D:/Credentials/demo-instance.pem"
+key_path 		= "pem file"
 file 			= "install_apache.sh"
 
 /****************S3************************************/
