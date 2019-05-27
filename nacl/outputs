@@ -1,0 +1,9 @@
+output "vpc_id" {
+  description = "The ID of the VPC"
+  value       = "${data.terraform_remote_state.vpc.id}"
+}
+
+output "nacl_id"{
+	description = "The ID of the NACL"
+	value = "${aws_network_acl.main_nacl.id}"
+}
