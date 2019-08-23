@@ -1,0 +1,13 @@
+ssh into instance created through terraform , need pem/ppk file
+
+#problem statement
+  I have only one pem file and i want to create multiple instance using this same pem file
+  
+  
+#--Solution
+You need to copy public key and paste it in this resource or paste it in some file and give path of that file
+
+resource "aws_key_pair" "terraform-common-key"{
+	key_name 	= "${var.key_name}"
+	public_key 	= "${file("authorized_keys")}"
+}
