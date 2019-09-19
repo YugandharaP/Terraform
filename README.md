@@ -58,7 +58,7 @@ Note that some example may create resources which can cost money. Run ``` $ terr
 > #### Note : The file can be named anything, since Terraform loads all files ending in .tf in a directory.
 - **`outputs.tf`**  : Output variables as a way to organize data to be easily queried and shown back to the Terraform user.
 -	**`.tfvars`** contain values for the declared variables or we can say to persist variable values, create a file and assign variables within this file.typically called: **terraform.tfvars**.
-
+> #### Note : If file name is terraform.tfvars - terraform automatically take values and If the file name other than terraform.tfvars - need to give file name at runtime (terraform apply -var-file="testing.tfvars")
 -	**`.tfstate`** and **`.tfstate.backup`** holds the last-known state of the infrastructure, you’ll want to store this, too.
 -	To see what Terraform will do: `terraform plan -var-file terraform.tfvars`
 -	To bring up the infrastructure we’ll run: `terraform apply -var-file terraform.tfvars`
