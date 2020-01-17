@@ -1,0 +1,9 @@
+---
+
+version: 1.0.0
+docker: []
+lambda: []
+deployments:
+  infrastructure:
+    path: terraform_infrastructure
+

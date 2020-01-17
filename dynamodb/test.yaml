@@ -1,0 +1,7 @@
+jmeter:
+  - name: sample_script
+    path: Testdata
+    version: 0.1
+opentest: 
+  - name: Opentest
+    path: workspace
